@@ -75,12 +75,14 @@ while pilihan == "beli" :
 #Menghitung diskon
     diskon = 0
 
-    if total > 50000:
+    if total > 50000 and total < 100000:
         diskon = 0.05*total
     elif total > 100000 and total < 250000:
         diskon = 0.10*total
     elif total > 250000:
         diskon = 0.15*total
+    else:
+        pass
 
     harga_bayar = total-diskon
 
