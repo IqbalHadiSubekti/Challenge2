@@ -84,12 +84,14 @@ while pemesanan == "ya" :
         
     totalsemua=total1+total2 
 
-    if totalsemua > 50000:
+    if 50000 totalsemua < 100000:
         diskon = 0.05*totalsemua
     elif 100000 > totalsemua < 250000:
         diskon = 0.10*totalsemua
     elif totalsemua > 250000:
         diskon = 0.15*totalsemua
+    else:
+        pass
 
     harga = totalsemua-diskon
 
@@ -113,7 +115,3 @@ while pemesanan == "ya" :
         pass
     elif lagi == "tidak":
         break
-
-
-
-
