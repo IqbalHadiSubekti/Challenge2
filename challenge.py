@@ -1,17 +1,19 @@
+from datetime import datetime
+
 pilihan = "beli"
 
 while pilihan == "beli" :
     print("=========================================================")
     print("|\t\t\t BAKSO \t\t\t|")
     print("|\t\t\t DAFTAR MENU \t\t\t|")
-    print("| \t1. Bakso Urat \t\t10000 \t\t|")
-    print("| \t2. Bakso Sapi \t\t10000 \t\t|")
-    print("| \t3. Bakso Ayam \t\t10000 \t\t|")
-    print("| \t4. Bakso Beranak \t\t12000 \t\t|")
-    print("| \t5. Bakso Telur \t\t12000 \t\t|")
-    print("| \t6. Bakso Mercon \t15000 \t\t|")
-    print("| \t7. Bakso Spesial \t\t15000 \t\t|")
-    print("| \t8. Bakso Komplit \t\t20000 \t\t|")
+    print("| \t1. Bakso Urat    10000 \t\t|")
+    print("| \t2. Bakso Sapi    10000 \t\t|")
+    print("| \t3. Bakso Ayam    10000 \t\t|")
+    print("| \t4. Bakso Beranak 12000 \t\t|")
+    print("| \t5. Bakso Telur   12000 \t\t|")
+    print("| \t6. Bakso Mercon  15000 \t\t|")
+    print("| \t7. Bakso Spesial 15000 \t\t|")
+    print("| \t8. Bakso Komplit 20000 \t\t|")
     print("=========================================================")
     print()
 
@@ -90,6 +92,7 @@ while pilihan == "beli" :
     print("Porsi minuman: ",pcs)
     print("Diskon: ",diskon)
     print("Harga bayar: ",harga_bayar)
+    print("Tanggal pesan: ",datetime.now())
 
     transaksi = str(input("Apakah anda akan membeli lagi? (ya/tidak) : "))
 
